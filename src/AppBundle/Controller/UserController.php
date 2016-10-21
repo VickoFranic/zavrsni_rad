@@ -23,6 +23,11 @@ class UserController extends Controller
     {
         return 1;
     }
+    public function vulinafunkcija2()
+    {
+        return 1;
+    }
+
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
