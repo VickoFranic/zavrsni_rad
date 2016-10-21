@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>SurveyQuestion list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for SurveyQuestion in SurveyQuestions %}
+            <tr>
+                <td><a href="{{ path('surveyquestion_show', { 'id': SurveyQuestion.id }) }}">{{ SurveyQuestion.id }}</a></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('surveyquestion_show', { 'id': SurveyQuestion.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('surveyquestion_edit', { 'id': SurveyQuestion.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('surveyquestion_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+{% endblock %}
