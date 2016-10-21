@@ -19,18 +19,7 @@ class UserController extends Controller
      * @Route("/", name="user_index")
      * @Method("GET")
      */
-    public function vulinafunkcija()
-    {
-        return 1;
-    }
-    public function vulinafunkcija2()
-    {
-        return 1;
-    }
-    public function davorovafunkcija1()
-    {
-        return 1;
-    }
+
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
