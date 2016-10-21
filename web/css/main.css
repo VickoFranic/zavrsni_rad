@@ -1,0 +1,16 @@
+.login_title
+{
+    margin-bottom: 25px;
+}
+.login-wrapper
+{
+    border:1px solid lightgray;
+    padding: 25px 50px;
+    border-radius: 5px;
+
+}
+
+.login-wrapper button
+{
+    margin-bottom: 25px;
+}
